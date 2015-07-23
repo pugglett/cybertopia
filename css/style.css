@@ -1,0 +1,161 @@
+body {
+  background-color: #2A324B; /* sets background color for entire browser window */
+  font-family:'Muli', sans-serif;
+
+}
+#wrapper {
+  background-color: #DFFDFF; /* creates white box around all the content */
+  width: 85%; /* makes the white box not fill the whole width of the browser window */
+  margin-left: auto; /* this line and the next one center the white box */
+  margin-right: auto;
+  margin-top: .6em; /* creates a little space between upper browser edge and top of white box */
+  border-bottom: 4em solid #DFFDFF; /* creates the white stripe that pokes out below the footer */
+  border-radius: 4em; /* round the corners of the white box.*/
+}
+header h1 { /* for the <h1> inside <header>, do the following... */
+  text-transform: uppercase; /*make all letters inside <h1> uppercase */
+  text-align: center; /* align text to center of #wrapper */
+  padding-top: .4em; /* add a little padding above <h1> text */
+  padding-bottom: 0em; /* don't add any padding to bottom of <h1> text */
+  margin-top: 0em; /* don't include any margin above h1 (it normally has some by default) */
+  margin-bottom: .3em; /* set .3em margin below <h1> */
+  color: #blue; /*set color of h1 text to match nav color */
+  letter-spacing: -.05em; /* tighten up the spacing between letters a bit */
+ 
+}
+main { /* main is a new HTML5 tag used to surround the main content on a site (everything except for nav and footer) */
+  padding: 2em; /* creates space around text and images so theyre don't go right to the edge of the white box */
+}
+
+h1 {
+  font-family: apple chancery; 
+  /*this creates a font for the heading*/
+}
+
+
+/* --- NAVIGATION SETTINGS --- */
+
+nav {
+  background-color: #78FFD6;
+  border-top: solid 5px #2A324B; /*creates border above nav in same color as body background. (That's why it looks like a gap.) */
+  border-bottom: solid 5px #2A324B;
+  text-align: center; /* centers menu items */
+  padding: .7em; /* prevents menu items from being too close to the edge of the nav stripe */
+}
+nav ul {  /* for each <ul> inside <nav>, do the following... */
+  padding: 0em; /* remove extra spacing that unordered lists have by default. */
+  margin: 0em;
+}
+nav ul li { /* for each <li> inside a <ul> insdie <nav>, do the following... */
+  display: inline; /* makes the menu items display on a single row */
+}
+nav a { /* for each <a> inside <nav>, do the following... */
+  color: black; /* make the linked text white */
+  text-decoration: none; /* don't underline it */
+  padding: 1em; /* put 1 em of space around it. */
+  text-transform: uppercase; /* make menu items all caps */
+  font-size: .8em; /* make the text size .8em */
+}
+nav a:hover { /* when user places mouse over the menu item, do the following... */
+  background-color: #0AD3FF; /* change background color */
+  color: silver; /* change text color */
+}
+nav a.active { /* for the menu item with class="active", do the following... */
+  text-decoration: underline; /* underline it to remind the user which page she's on */
+}
+
+/* --- TEXT SETTINGS --- */
+
+h2 {
+  font-size: 1em; /* 1em = 100% of whatever font size the user has set as the default for their browser. 
+  Try deleting this setting or changing to other numbers like .6 or 1.5 and see what happens.  */
+}
+a {
+  color: #45ADA8; /* sets all text links to turquoise unless otherwise specified */
+}
+
+blockquote {
+
+  border: 3px solid #0AD3FF;
+  text-align: center;
+  
+}
+
+p.font { 
+
+  font-family: apple chancery;
+  /*anything in the paragraph element */
+}
+
+/* --- IMAGE SETTINGS --- */
+
+img.float-right { /* for any image tag with class="float-right", do the following... */
+  float: right; /* position it on the right and let other things sit beside it/wrap around it */
+  margin-left: 1em; /* don't let text get to close to the left edge of the image */
+}
+
+
+img.float-left {
+  float: left;
+  margin-bottom: 1em;
+}
+img.rounded { /* for any image with class="rounded", do the following... */
+  border-radius: 100%; /* completely round the edges so it makes a circle shape */
+}
+
+img.rounded2 { /* for any image with class="rounded", do the following... */
+  border-radius: 75%; /* completely round the edges so it makes a circle shape */
+}
+.border1 {
+  border: solid 6px #A098AE; /* add a border that matches the background color on anything with class="border1" */
+}
+
+blockquote.color2 {
+  border: 4px solid #A098AE;
+  text-align: center;
+  
+
+}
+.border2 {
+  border: solid 6px #F92A82;
+}
+
+blockquote.color {
+  border: 4px solid #F92A82;
+  text-align: center;
+  
+
+}
+
+.border3 {
+  border:solid 6px #F7C59F; 
+}
+blockquote.color3 {
+  border: 4px solid #F7C59F;
+  text-align: center;
+  
+
+}
+.border4 {
+  border:solid 5px;
+}
+blockquote.color4 {
+  border: 4px solid #023C40;
+  text-align: center;
+}
+/* --- FOOTER SETTINGS --- */
+
+footer {
+  background-color: #78FFD6;
+  border-top: solid 5px #2A324B;
+  border-bottom: solid 5px #2A324B;
+  text-align: center;
+  font-size: .7em;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+footer a { /* for every <a> inside <footer>, do the following... */ 
+  color: white; /* make the linked text white */
+}
